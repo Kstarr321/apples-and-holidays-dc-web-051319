@@ -59,7 +59,7 @@ def all_supplies_in_holidays(holiday_hash)
 
   holiday_hash.each do |season, holiday|
     puts "#{season.capitalize}:" 
-    
+
       holiday.each do |holiday, supplies|
         holiday = holiday.to_s
         if holiday.include? "_"
@@ -69,11 +69,11 @@ def all_supplies_in_holidays(holiday_hash)
             cap_array << word.capitalize
             cap_array.join("_")
           end
-          x = "#{cap_array.join("_")}: #{supplies.join(", ")}"
+          x = "  #{cap_array.join("_")}: #{supplies.join(", ")}"
         else 
-          puts "  #{holiday.capitalize}: #{supplies.join(", ")}"
+          y = "  #{holiday.capitalize}: #{supplies.join(", ")}"
         end
-          puts "  #{x}" 
+          puts "  #{x}#{y}" 
       end 
   end
 end

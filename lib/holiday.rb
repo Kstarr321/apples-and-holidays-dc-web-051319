@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
             cap_array << word.capitalize
             cap_array.join("_")
           end
-          x = "  #{cap_array.join("_")}: #{supplies.join(", ")}"
+          x = "  #{cap_array.join(" ")}: #{supplies.join(", ")}"
         else 
           y = "  #{holiday.capitalize}: #{supplies.join(", ")}"
         end
